@@ -21,13 +21,19 @@ public class ComputeSub : MonoBehaviour
 
     public void Reset()
     {
+        // reset inputFields
         inputField1.text = "0";
         inputField2.text = "0";
+        result.text = "Result";
+
+        // enable inputFields
         inputField1.interactable = true;
         inputField2.interactable = true;
+
+        // activate needed Buttons
         addButton.interactable = true;
         resetButton.interactable = false;
-        result.text = "Result";
+
     }
     private float AddNumbers()
     {
